@@ -1,7 +1,7 @@
 
 import React, { useContext } from "react";
 import { Typography, Grid, Button } from "@mui/material";
-import { SearchContext, FinalDataContext } from "../../MainComponent/SearchContext"
+import {  FinalDataContext } from "../../MainComponent/SearchContext"
 
 
 

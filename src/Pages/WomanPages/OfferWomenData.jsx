@@ -59,7 +59,7 @@ Brand Offer
 
                 {
                     images.map((item)=>(
-<Grid   size={{xs:3,md:2}} sx={{height:{xs:"10vh",md:"30vh"},margin:{xs:"20px 30px",md:"35px 32px"},width:{xs:"25vw",md:"12vw"},width:{xs:"25vw",md:"12vw"}}}   >
+<Grid   size={{xs:3,md:2}} sx={{height:{xs:"10vh",md:"30vh"},margin:{xs:"20px 30px",md:"35px 32px"},width:{xs:"25vw",md:"12vw"},}}   >
 <img    src={item.image}   alt="not found"  style={{height:"100%",width:"100%",borderRadius:"15px"}}/>
 <Typography   sx={{textAlign:"center",fontSize:"18px"}} >
    {item.title}
