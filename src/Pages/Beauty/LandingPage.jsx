@@ -8,25 +8,25 @@ import OfferBeautyData  from "./OfferBeautyItems";
 function LandingPageBeauty(){
 
 
-    const[data]=[{
-image:"/assets/BeautyBannerImages/Bannerimage1.jpeg"
+    const[data]=useState([{
+image:"/Assets/BeautyBannerImages/BannerImage1.jpeg"
 
     },
     {
-        image:"/assets/BeautyBannerImages/Bannerimage2.jpeg"
+        image:"/Assets/BeautyBannerImages/BannerImage2.jpeg"
         
             },
             {
-                image:"/assets/BeautyBannerImages/Bannerimage3.jpeg"
+                image:"/Assets/BeautyBannerImages/BannerImage3.jpeg"
                 
                     }
                     ,
                     {
-                        image:"/assets/BeautyBannerImages/Bannerimage4.jpeg"
+                        image:"/Assets/BeautyBannerImages/BannerImage4.jpeg"
                         
                             }
                 
-                ]
+                ])
 
 
 
@@ -49,7 +49,7 @@ image:"/assets/BeautyBannerImages/Bannerimage1.jpeg"
 
 <Grid  size={{xs:10}} sx={{width:"80vw",height:{xs:"20vh",md:"35vh"},margin:"0px 10px"}}  >
     
-    <img   src={data[storedData].image}   alt="not found" style={{width:"100%",height:"100%"}}  />
+    <img   src={data[storedData]?.image}   alt="not found" style={{width:"100%",height:"100%"}}  />
 </Grid>
 
 

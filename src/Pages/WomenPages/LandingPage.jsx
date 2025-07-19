@@ -8,18 +8,18 @@ import TotalImagesWomen from "./TotalImages";
 function LandingPageWomen(){
 
 
-    const[data]=[{
-image:"/assets/WomenBannerImage/Bannerimage1.jpeg"
+    const[data]=useState([{
+image:"/Assets/WomenBannerImage/BannerImage1.jpeg"
 
     },
     {
-        image:"/assets/WomenBannerImage/Bannerimage2.jpeg"
+        image:"/Assets/WomenBannerImage/BannerImage2.jpeg"
         
             },
             {
-                image:"/assets/WomenBannerImage/Bannerimage3.jpeg"
+                image:"/Assets/WomenBannerImage/BannerImage3.jpeg"
                 
-                    }]
+                    }])
 
 
                     // console.log(data)
@@ -43,7 +43,7 @@ image:"/assets/WomenBannerImage/Bannerimage1.jpeg"
 
 <Grid  size={{xs:10}} sx={{width:"80vw",height:{xs:"20vh",md:"35vh"},margin:"0px 10px"}}  >
     
-    <img   src={data[storedData].image}   alt="not found" style={{width:"100%",height:"100%"}}  />
+    <img   src={data[storedData]?.image}   alt="not found" style={{width:"100%",height:"100%"}}  />
 </Grid>
 
 

@@ -8,18 +8,18 @@ import TopSingleImageWoman from "./TopSingleImageWomen";
 function LandingPageWoman(){
 
 
-    const[data]=[{
-image:"/assets/WomanBannerImage/BannerImage1.jpeg"
+    const[data]=useState([{
+image:"/Assets/WomanBannerImage/BannerImage1.jpeg"
 
     },
     {
-        image:"/assets/WomanBannerImage/Bannerimage2.jpeg"
+        image:"/Assets/WomanBannerImage/BannerImage2.jpeg"
         
             },
             {
-                image:"/assets/WomanBannerImage/Bannerimage3.jpeg"
+                image:"/Assets/WomanBannerImage/BannerImage3.jpeg"
                 
-                    }]
+                    }])
 
 
                     // console.log(data)
@@ -43,7 +43,7 @@ image:"/assets/WomanBannerImage/BannerImage1.jpeg"
 
 <Grid  size={{xs:10}} sx={{width:"80vw",height:{xs:"20vh",md:"35vh"},margin:"0px 10px"}}  >
     
-    <img   src={data[storedData].image}   alt="not found" style={{width:"100%",height:"100%"}}  />
+    <img   src={data[storedData]?.image}   alt="not found" style={{width:"100%",height:"100%"}}  />
 </Grid>
 
 

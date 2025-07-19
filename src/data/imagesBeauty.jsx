@@ -2,14 +2,14 @@
 const imagesP =[{
 
     title: "Blue Heaven Products",
-    image:"/assets/BeautyImages/image1.jpeg",
+    image:"/assets/BeautyImages/Image1.jpeg",
     price:"₹1299",
     button:"ADD TO CART"
 },
 {
 
     title:"Lip & Cheek Makeup",
-    image:"/assets/BeautyImages/image2.jpeg",
+    image:"/assets/BeautyImages/Image2.jpeg",
     price:"₹1499",
     button:"ADD TO CART"
 
@@ -17,7 +17,7 @@ const imagesP =[{
 {
 
     title:"Lipstick",
-    image:"/assets/BeautyImages/image3.jpeg",
+    image:"/assets/BeautyImages/Image3.jpeg",
     price:"₹1099",
     button:"ADD TO CART"
 
@@ -25,7 +25,7 @@ const imagesP =[{
 {
 
     title:"Lackme Foundation",
-    image:"/assets/BeautyImages/image4.jpeg",
+    image:"/assets/BeautyImages/Image4.jpeg",
     price:"₹1399",
     button:"ADD TO CART"
 
@@ -33,7 +33,7 @@ const imagesP =[{
 {
 
     title:"Makeup foundation",
-    image:"/assets/BeautyImages/image5.jpeg",
+    image:"/assets/BeautyImages/Image5.jpeg",
     price:"₹999",
     button:"ADD TO CART"
 
@@ -41,7 +41,7 @@ const imagesP =[{
 {
 
     title:"Ponds BB Foundation",
-    image:"/assets/BeautyImages/image6.jpeg",
+    image:"/assets/BeautyImages/Image6.jpeg",
     price:"₹1199",
     button:"ADD TO CART"
 
@@ -49,7 +49,7 @@ const imagesP =[{
 {
 
     title:"Ponds BB Cream",
-    image:"/assets/BeautyImages/image7.jpeg",
+    image:"/assets/BeautyImages/Image7.jpeg",
     price:"₹899",
     button:"ADD TO CART"
 
@@ -57,7 +57,7 @@ const imagesP =[{
 {
 
     title:"Sugar lite Foundation ",
-    image:"/assets/BeautyImages/image8.jpeg",
+    image:"/assets/BeautyImages/Image8.jpeg",
     price:"₹1099",
     button:"ADD TO CART"
 
@@ -65,7 +65,7 @@ const imagesP =[{
 {
 
     title:"Blue Heaven Makeup",
-    image:"/assets/BeautyImages/image9.jpeg",
+    image:"/assets/BeautyImages/Image9.jpeg",
     price:"₹1599",
     button:"ADD TO CART"
 
@@ -73,7 +73,7 @@ const imagesP =[{
 {
 
     title:"Iba makeup set",
-    image:"/assets/BeautyImages/image10.jpeg",
+    image:"/assets/BeautyImages/Image10.jpeg",
     price:"₹799",
     button:"ADD TO CART"
 
@@ -81,7 +81,7 @@ const imagesP =[{
 {
 
     title:"Matte lipstick",
-    image:"/assets/BeautyImages/image11.jpeg",
+    image:"/assets/BeautyImages/Image11.jpeg",
     price:"₹1699",
     button:"ADD TO CART"
 
@@ -89,7 +89,7 @@ const imagesP =[{
 {
 
     title:"Makeup collection",
-    image:"/assets/BeautyImages/image12.jpeg",
+    image:"/assets/BeautyImages/Image12.jpeg",
     price:"₹1399",
     button:"ADD TO CART"
 

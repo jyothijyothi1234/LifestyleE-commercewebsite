@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 
     
     const SingleImage=[
-      {image:"/assets/WomenBannerImage/Banner.jpeg"}
+      {image:"/Assets/WomenBannerImage/Banner.jpeg"}
   ]
     return (
       <Grid container  columns={{ xs: 12 }} >

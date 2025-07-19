@@ -1,50 +1,50 @@
-import React from "react"
+import React, { useState } from "react"
 import { Typography } from "@mui/material";
 import Grid from '@mui/material/Grid';
 
 function OfferWomanData(){
 
 
-    const[images]=[{
+    const[images]=useState([{
 
         title: "Buy 2 at 40% Off",     
-        image:"/assets/WomansImages/offerimage1.jpeg",
+        image:"/assets/WomansImages/Offerimage1.jpeg",
         
     },
     {
 
         title:"Buy 1 Get 1 Free",
-        image:"/assets/WomansImages/offerimage2.jpeg",
+        image:"/assets/WomansImages/Offerimage2.jpeg",
       
     },
     {
 
         title:"Buy 2 at 40% Off",
-        image:"/assets/WomansImages/offerimage3.jpeg",
+        image:"/assets/WomansImages/Offerimage3.jpeg",
        
     },
     {
 
         title:"Buy 2 at 50% Off ",
-        image:"/assets/WomansImages/offerimage4.jpeg",
+        image:"/assets/WomansImages/Offerimage4.jpeg",
       
     },
     {
 
         title:"Buy 1 Get 1 Free",
-        image:"/assets/WomansImages/offerimage5.jpeg",
+        image:"/assets/WomansImages/Offerimage5.jpeg",
        
     },
     {
 
         title:"Buy 2 at 50% Off"
         ,
-        image:"/assets/WomansImages/offerimage6.jpeg",
+        image:"/assets/WomansImages/Offerimage6.jpeg",
         
     },
    
    
-    ]
+    ])
 
     return(
 

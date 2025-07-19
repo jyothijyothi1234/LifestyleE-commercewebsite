@@ -10,28 +10,28 @@ import DownSingleShoeImages  from "./DownSingleShoeImages"
 function LandingPageShoeBag(){
 
 
-    const[data]=[{
-image:"/assets/Shoe&BagBannerImages/Bannerimage1.jpeg"
+    const[data]=useState([{
+image:"/Assets/Shoe&BagBannerImages/BannerImage1.jpeg"
 
 
     },
     {
         
-        image:"/assets/Shoe&BagBannerImages/Bannerimage2.jpeg"
+        image:"/Assets/Shoe&BagBannerImages/BannerImage2.jpeg"
 
         
             },
             {
                 
-                image:"/assets/Shoe&BagBannerImages/Bannerimage3.jpeg"
+                image:"/Assets/Shoe&BagBannerImages/BannerImage3.jpeg"
 
                 
                     },
                     {
-                        image:"/assets/Shoe&BagBannerImages/Bannerimage4.jpeg"
+                        image:"/Assets/Shoe&BagBannerImages/BannerImage4.jpeg"
         
                         
-                            }]
+                            }])
 
 
                     // console.log(data)
@@ -55,7 +55,7 @@ image:"/assets/Shoe&BagBannerImages/Bannerimage1.jpeg"
 
 <Grid  size={{xs:10}} sx={{width:"80vw",height:{xs:"20vh",md:"35vh"},margin:"0px 10px"}}  >
     
-    <img   src={data[storedData].image}   alt="not found" style={{width:"100%",height:"100%"}}  />
+    <img   src={data[storedData]?.image}   alt="not found" style={{width:"100%",height:"100%"}}  />
 </Grid>
 
 
