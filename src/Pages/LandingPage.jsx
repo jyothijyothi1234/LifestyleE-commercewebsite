@@ -9,7 +9,7 @@ function LandingPage(){
 
     return(
 
-        <Grid  container >
+        <Grid  container  sx={{height:"auto"}} >
 
 <Grid  size={{xs:12}} >
     <LandingPageWomen   />

@@ -8,7 +8,7 @@ import OfferBeautyData  from "./OfferBeautyItems";
 function LandingPageBeauty(){
 
 
-    const[data,setData]=useState([{
+    const[data]=[{
 image:"/assets/BeautyBannerImages/Bannerimage1.jpeg"
 
     },
@@ -26,10 +26,9 @@ image:"/assets/BeautyBannerImages/Bannerimage1.jpeg"
                         
                             }
                 
-                ])
+                ]
 
 
-                    console.log(data)
 
                     const[storedData,setStoredData]=useState(0)
 
@@ -45,10 +44,10 @@ image:"/assets/BeautyBannerImages/Bannerimage1.jpeg"
 
 <Grid   size={{xs:12}}  sx={{display:"flex",marginTop:"23px"}}>
     <Grid  size={{xs:1}}  sx={{display:"flex",justifyContent:"flex-end",alignItems:"center"}} >
-<ArrowBackIosNewIcon    onClick={LeftHand}   sx={{width:"50px",height:"50px",border:"2px solid black",bgcolor:"white",borderRadius:"35px",padding:"10px 10px"}} />
+<ArrowBackIosNewIcon    onClick={LeftHand}   sx={{width:{xs:"25px",md:"50px"},height:{xs:"20px",md:"50px"},border:"2px solid black",bgcolor:"white",borderRadius:"35px",padding:"10px 10px"}} />
     </Grid>
 
-<Grid  size={{xs:10}} sx={{width:"80vw",height:"35vh",margin:"0px 10px"}}  >
+<Grid  size={{xs:10}} sx={{width:"80vw",height:{xs:"20vh",md:"35vh"},margin:"0px 10px"}}  >
     
     <img   src={data[storedData].image}   alt="not found" style={{width:"100%",height:"100%"}}  />
 </Grid>
@@ -56,7 +55,7 @@ image:"/assets/BeautyBannerImages/Bannerimage1.jpeg"
 
 
 <Grid  size={{xs:1}}  sx={{display:"flex",justifyContent:"flex-start",alignItems:"center"}}  >
-<ArrowForwardIosIcon    onClick={RightHand}  sx={{width:"50px",height:"50px",border:"2px solid black",bgcolor:"white",borderRadius:"35px",padding:"10px 10px"}}  />
+<ArrowForwardIosIcon    onClick={RightHand}  sx={{width:{xs:"25px",md:"50px"},height:{xs:"20px",md:"50px"},border:"2px solid black",bgcolor:"white",borderRadius:"35px",padding:"10px 10px"}}  />
     </Grid> 
     </Grid> 
 

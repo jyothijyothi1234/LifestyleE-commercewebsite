@@ -1,5 +1,4 @@
-import React, { useState } from "react"
-import { Typography } from "@mui/material";
+import React from "react"
 
 import Grid from '@mui/material/Grid';
 
@@ -17,7 +16,7 @@ import Grid from '@mui/material/Grid';
 
     {SingleImage.map((item, index) => (
         
-        <Grid  size={{xs:12}}  sx={{width: "100vw", height: "40vh",margin: "70px 30px"}} >
+        <Grid  key={index} size={{xs:12}}  sx={{width: "100vw", height:{xs:"20vh",md:"40vh"},margin: "70px 30px"}} >
           <img
             src={ item.image}
             alt="not found"

@@ -71,48 +71,48 @@ const handleCloseSignIn=()=>{
 
 
 return(
-<Grid  container   sx={{bgcolor:"ButtonShadow",alignItems:"center",padding:"20px 10px",boxSizing:"border-box",zIndex:1000,position:"fixed",width:"100%",top:0,left:0,right:0,}}>
-<Grid  size={{xs: 2}} >
+<Grid  container  columns={{xs:9, md: 12 }} sx={{bgcolor:"ButtonShadow",alignItems:"center",padding:{xs:"10px 5px",md:"20px 10px"},boxSizing:"border-box",zIndex:1000,position:"fixed",width:"100%",top:0,left:0,right:0,}}>
+<Grid  size={{xs:1,md: 2}} >
 <NavLink   to="/"  style={{textDecoration:"none"} }> 
 
-<Typography   sx={{fontWeight:"bold",fontSize:"30px",display:"flex",justifyContent:"center",color:"black"}}>
+<Typography   sx={{fontWeight:"bold", fontSize:{xs:"15px",md:"30px"},display:"flex",justifyContent:"center",color:"black"}}>
  Lifestyle
 </Typography>
 </NavLink>
 
 </Grid>
 
-<Grid  size={{xs: 3}}  sx={{display:"flex"}}>
+<Grid  size={{xs: 2,md:3}}  sx={{display:"flex"}}>
 
-<Grid  size={{xs: 3}}  >
+<Grid  size={{xs:3,md: 3}}  >
 <NavLink    to="/women" style={({isActive})=>({textDecoration:"none",color:isActive?"red":"black"}) }   > 
-<Typography    sx={{fontWeight:"bold",fontSize:"18px",padding:"6px 0px"}}>
+<Typography    sx={{fontWeight:"bold",fontSize:{xs:"8px",md:"18px"},padding:{xs:"10px 0px",md:"6px 0px"}}}>
   Women
 </Typography>
 </NavLink>
 </Grid>
-<Grid  size={{xs: 2}}  >
+<Grid  size={{xs: 2,md:2}}  >
   <NavLink   to="/men" style={({isActive})=>({textDecoration:"none",color:isActive?"red":"black"}) } >
-  <Typography   sx={{fontWeight:"bold",fontSize:"18px",padding:"6px 1px 6px 0px"}}>
+  <Typography   sx={{fontWeight:"bold",fontSize:{xs:"8px",md:"18px"},padding:{xs:"10px 0px 6px 0px",md:"6px 1px 6px 0px"}}}>
  Men
 </Typography>
   </NavLink>
 
 
 </Grid>
-<Grid  size={{xs: 4}}  >
+<Grid  size={{xs: 4,md:4}}  >
 
   <NavLink to="/shoes&bags"  style={({isActive})=>({textDecoration:"none",color:isActive?"red":"black"}) }  >
 
-  <Typography   sx={{fontWeight:"bold",fontSize:"18px",padding:"6px 0px"}}>
+  <Typography   sx={{fontWeight:"bold",fontSize:{xs:"8px",md:"18px"},padding:{xs:"10px 0px 0px 0px",md:"6px 0px"}}}>
 Shoes & Bags
 </Typography>
   </NavLink>
 </Grid>
-<Grid  size={{xs: 3}}  >
+<Grid  size={{xs:2,md:3}}  >
 
   <NavLink   to="/beauty"    style={({isActive})=>({textDecoration:"none",color:isActive?"red":"black"}) }  >
-  <Typography   sx={{fontWeight:"bold",fontSize:"18px",padding:"6px 4px 6px 0px",display:"flex",justifyContent:"end"}}>
+  <Typography   sx={{fontWeight:"bold",fontSize:{xs:"8px",md:"18px"},padding:{xs:"10px 2px 0px 0px",md:"6px 4px 6px 0px"},display:"flex",justifyContent:"end"}}>
  Beauty
 </Typography>
   </NavLink>
@@ -123,8 +123,8 @@ Shoes & Bags
 
 
 
-<Grid size={{xs: 3}} sx={{ border: "2px solid black", margin: "0px 20px", borderRadius: "7px", }}>
-  <Box sx={{ position: "relative", width: "90%"
+<Grid size={{xs:3,md: 3}} sx={{ border: "2px solid black", margin: "0px 20px", borderRadius: "7px", }}>
+  <Box sx={{ position: "relative", width:{xs:"85%",md:"90%"} 
 }}>
     
     <SearchIcon
@@ -150,36 +150,36 @@ value={searchValue}
 </Grid>
 
 
-<Grid  size={{xs: 3}} sx={{display:"flex",alignItems:"center"}}  >
+<Grid  size={{xs:2,md: 3}} sx={{display:"flex",alignItems:"center"}}  >
 
-<Grid   size={{xs: 12}}  sx={{display:"flex",alignItems:"center",gap:7}}>
-  <Grid   size={{xs: 3}}   >
+<Grid   size={{xs:12}}  sx={{display:"flex",alignItems:"center",gap:{xs:10,md:7}}}>
+  <Grid   size={{xs:2,md: 3}}   >
     
   <Button variant="contained"    onClick={handling} >
-      <Typography    sx={{fontSize:"15px"}}>
+      <Typography    sx={{fontSize:{xs:"9px",md:"15px"}}}>
     MORE
     </Typography>
     </Button>
   </Grid>
 
-<Grid  size={{xs: 12}}  sx={{display:"flex",height:"40px",paddingTop:"7px",bgcolor:'#FFB900',border:"2px solid #FFB900",justifyContent:"center"}}> 
+<Grid  size={{xs:12,md: 12}}  sx={{display:"flex",height:{xs:"30px",md:"40px"},paddingTop:{xs:"5px",md:"7px"},bgcolor:{xs:"none",md:'#FFB900'},border:{xs:"none",md:"2px solid #FFB900"},justifyContent:"center",}}> 
 
 <Link   style={{textDecoration:"none"}} >
   
-<Typography    sx={{fontSize:"15px",color:"black"}}  onClick={handleOpenSignIn}>
+<Typography    sx={{fontSize:{xs:"8px",md:"15px"},color:"black"}}  onClick={handleOpenSignIn}>
 Sign In 
 </Typography>
 </Link>
 
 <SignIn open={openSignIn} onClose={handleCloseSignIn} />
 
-<Typography   sx={{padding:"1px 3px 0px 3px"}}>
+<Typography   sx={{padding:{xs:"1px 1px 0px 1px",md:"1px 3px 0px 3px"}}}>
     /
 </Typography> 
 
 <Link  style={{textDecoration:"none"}} >
 
-<Typography   sx={{fontSize:"15px",color:"black"}}  onClick={handleOpenSignIn}>
+<Typography   sx={{fontSize:{xs:"8px",md:"15px"},color:"black"}}  onClick={handleOpenSignIn}>
  Sign Up
 </Typography>
 </Link>
@@ -190,20 +190,20 @@ Sign In
 
 </Grid>
 
-<Grid  size={{xs: 5}}  >
-<Grid  size={{xs: 10}}   sx={{display:"flex",justifyContent:"center",marginLeft:"10px",}} >
+<Grid  size={{xs:5,md: 5}}  >
+<Grid  size={{xs:8,md: 10}}   sx={{display:"flex",justifyContent:"center",marginLeft:{xs:"20px",md:"10px"},}} >
 
   <StyledRating
         name="customized-color"
         max={1}
         defaultValue={0}
         icon={<FavoriteIcon fontSize="inherit"  />}
-        emptyIcon={<FavoriteBorderIcon fontSize="inherit" sx={{ color: 'black' }} />}
+        emptyIcon={<FavoriteBorderIcon fontSize="inherit" sx={{ color: 'black',height:{xs:"15px",md:"30px"} }} />}
       />
 </Grid> 
 
-<Grid  size={{xs: 12}}    >
-<Typography    sx={{textAlign:"end",color:"black"}}>
+<Grid  size={{xs:12,md: 12}}    >
+<Typography    sx={{textAlign:"end",color:"black",fontSize:{xs:"8px",md:"16px"}}}>
  favourites
 </Typography>
 </Grid> 
@@ -212,18 +212,18 @@ Sign In
 
 
 
-<Grid  size={{xs: 5}}  >
+<Grid  size={{xs:4,md: 5}}  >
 
-<Grid  size={{xs: 10}}   sx={{display:"flex",justifyContent:"center",marginLeft:"15px",}} >
-<ShoppingBagIcon    />
+<Grid  size={{xs:12,md: 10}}   sx={{display:"flex",justifyContent:"center",marginLeft:{xs:"12px",md:"15px"},}} >
+<ShoppingBagIcon    sx={{height:{xs:"15px",md:"30px"}}} />
 </Grid>
 
-<Grid  size={{xs: 12}}    sx={{display:"flex"}} >
-<Typography    sx={{textAlign:"end",fontSize:"16px",paddingRight:"10px",pl:3}}>
+<Grid  size={{xs:12,md: 12}}    sx={{display:"flex"}} >
+<Typography    sx={{textAlign:"end",fontSize:{xs:"8px",md:"16px"},paddingRight:"10px",pl:3}}>
  Basket
 </Typography>
 
-<Typography    sx={{color: click ? "red" : "black",display:hide?"flex":"none",fontSize:"16px"}}>
+<Typography    sx={{color: click ? "red" : "black",display:hide?"flex":"none",fontSize:{xs:"10px",md:"16px"},}}>
 {cart}
 </Typography>
 </Grid>
