@@ -9,8 +9,8 @@ import {  FinalDataContext } from "../../MainComponent/SearchContext"
 
 export function SingleBanner({singleimage}) {
     return (
-      <Grid container  columns={{ xs: 12 }} >
-        <Grid  size={{xs:12}}  sx={{width: "100vw",height:{xs:"20vh",md:"40vh"},margin: "70px 30px"}} >
+      <Grid container  columns={{ xs: 12 }}    >
+        <Grid  size={{xs:12}}  sx={{width: "100vw",height:{xs:"10vh",md:"40vh"},margin: "70px 30px"}} >
           <img
             src={singleimage}
             alt="not found"
@@ -30,7 +30,7 @@ function TotalImagesWoman(){
     const { filtersData,imagesM,show,setCart,cart,setClick,setHide, } = useContext(FinalDataContext);
 
     const SingleImage=[
-       {image:"/assets/WomanBannerImage/Banner2.jpeg"}
+       {image:"/Assets/WomanBannerImage/Banner2.jpeg"}
 ]
 
 
@@ -66,12 +66,12 @@ function TotalImagesWoman(){
 )          
 : (
  imagesM.map((item, index) => (
-   <Grid  size={{xs:2,md:2}} key={index} sx={{ height: {xs:"10vh",md:"30vh"}, mt:{xs:9,md:15},ml:12 }}>
+   <Grid  size={{xs:3,md:2}} key={index} sx={{ height: {xs:"10vh",md:"30vh"}, mt:{xs:11,md:15},ml:12 }}>
      <img src={item.image} alt="not found" style={{ height: "100%", width: "100%", borderRadius: "15px" }} />
      <Typography sx={{ textAlign: "center",fontSize: {xs:"10px",md:"18px"}}}>{item.title}</Typography>
      <Typography sx={{ textAlign: "center", fontSize: {xs:"10px",md:"18px"} }}>{item.price}</Typography>
-     <Button variant="contained" onClick={AddToCart} sx={{ mb: 1, ml:{xs:2,md:8} }}>
-      <Typography sx={{ textAlign: "center", fontSize: {xs:"10px",md:"13px" }}}>
+     <Button variant="contained" onClick={AddToCart} sx={{ mb: 1, ml:{xs:1,md:8} }}>
+      <Typography sx={{ textAlign: "center", fontSize: {xs:"6px",md:"13px" }}}>
         {item.button}
         </Typography>
         </Button>   </Grid>

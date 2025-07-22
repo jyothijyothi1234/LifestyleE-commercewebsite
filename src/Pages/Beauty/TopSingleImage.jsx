@@ -7,14 +7,14 @@ import Grid from '@mui/material/Grid';
 
     
     const SingleImage=[
-      {image:"/assets/BeautyBannerImages/Banner1.jpeg"}
+      {image:"/Assets/BeautyBannerImages/Banner1.jpeg"}
   ]
     return (
       <Grid container  columns={{ xs: 12 }} >
 
     {SingleImage.map((item, index) => (
         
-        <Grid   key={index} size={{xs:12}}  sx={{width: "100vw", height:{xs:"20vh",md:"40vh"},margin: "70px 30px"}} >
+        <Grid   key={index} size={{xs:12}}  sx={{width: "100vw", height:{xs:"10vh",md:"40vh"},margin: "70px 30px"}} >
           <img
             src={ item.image}
             alt="not found"

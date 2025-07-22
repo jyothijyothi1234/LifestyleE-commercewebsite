@@ -8,38 +8,38 @@ function OfferBeautyData(){
     const[images]=useState([{
 
         title: "Buy 2 at 40% Off",     
-        image:"/assets/BeautyImages/Offerimage1.jpeg",
+        image:"/Assets/BeautyImages/Offerimage1.jpeg",
         
     },
     {
 
         title:"Buy 1 Get 1 Free",
-        image:"/assets/BeautyImages/Offerimage2.jpeg",
+        image:"/Assets/BeautyImages/Offerimage2.jpeg",
       
     },
     {
 
         title:"Buy 2 at 40% Off",
-        image:"/assets/BeautyImages/Offerimage3.jpeg",
+        image:"/Assets/BeautyImages/Offerimage3.jpeg",
        
     },
     {
 
         title:"Buy 2 at 50% Off ",
-        image:"/assets/BeautyImages/Offerimage4.jpeg",
+        image:"/Assets/BeautyImages/Offerimage4.jpeg",
       
     },
     {
 
         title:"Buy 1 Get 1 Free",
-        image:"/assets/BeautyImages/Image12.jpeg",
+        image:"/Assets/BeautyImages/Image12.jpeg",
        
     },
     {
 
         title:"Buy 2 at 50% Off"
         ,
-        image:"/assets/BeautyImages/Offerimage6.jpeg",
+        image:"/Assets/BeautyImages/Offerimage6.jpeg",
         
     },
    
@@ -48,9 +48,9 @@ function OfferBeautyData(){
 
     return(
 
-        <Grid   container  columns={{ xs: 12 }} sx={{mb:40}} >
+        <Grid   container  columns={{ xs: 12 ,md:12 }} sx={{pb:10}}    >
 
-<Grid   size={{xs:12}}  sx={{margin:"8px 0px"}}>
+<Grid   size={{xs:12}}  sx={{margin:"8px 0px 3px 0px"}}>
 <Typography   sx={{textAlign:"center",fontSize:{xs:"20px",md:"30px"}}} >
 Brand Offer
 
@@ -61,7 +61,7 @@ Brand Offer
                     images.map((item)=>(
 <Grid   size={{xs:3,md:2}} sx={{height:{xs:"10vh",md:"30vh"},margin:{xs:"20px 30px",md:"35px 32px"},width:{xs:"25vw",md:"12vw"}}}   >
 <img    src={item.image}   alt="not found"  style={{height:"100%",width:"100%",borderRadius:"15px"}}/>
-<Typography   sx={{textAlign:"center",fontSize:"18px"}} >
+<Typography   sx={{textAlign:"center",fontSize:{xs:"8px",md:"18px"}}} >
    {item.title}
 </Typography>
 

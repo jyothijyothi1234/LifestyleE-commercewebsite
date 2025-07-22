@@ -22,14 +22,13 @@ function App() {
 const [click,setClick]=useState(false)
 
   return (
-    <div className="App">
+    <div className="App"   sx={{height:{xs:"scroll",md:0}}}>
 
       <BrowserRouter>
  <SearchContext.Provider    value={{searchValue,setSearchValue}}>
  <FinalDataContext.Provider   value={{filtersData,setFiltersData,imagesW,setShow,show,cart,setCart,click,setClick,hide,setHide,imagesM,imagesB,imagesP,}} >
 
       <NavBar   />
-      <Grid style={{ paddingTop: '20px' }}  />
 
 
 <Routes>
@@ -39,11 +38,12 @@ const [click,setClick]=useState(false)
   <Route     path="/shoes&bags"  element={<LandingPageShoeBag />} />
   <Route    path="/beauty"  element={<TotalImagesBeauty />} />
 </Routes>
+
 </FinalDataContext.Provider>
 </SearchContext.Provider> 
 
       </BrowserRouter>
-          
+
     </div>
   );
 }

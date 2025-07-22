@@ -34,14 +34,14 @@ image:"/Assets/WomanBannerImage/BannerImage1.jpeg"
                         setStoredData(storedData===0?data.length-1:storedData-1)
                     }
     return(
-<Grid  container  >
+<Grid  container   columns={{xs:12,md:12}}   >
 
-<Grid   size={{xs:12}}  sx={{display:"flex",marginTop:"23px"}}>
+<Grid   size={{xs:12}}  sx={{display:"flex",}}>
     <Grid  size={{xs:1}}  sx={{display:"flex",justifyContent:"flex-end",alignItems:"center"}} >
-<ArrowBackIosNewIcon    onClick={LeftHand}   sx={{width:{xs:"25px",md:"50px"},height:{xs:"20px",md:"50px"},border:"2px solid black",bgcolor:"white",borderRadius:"35px",padding:"10px 10px"}} />
+<ArrowBackIosNewIcon    onClick={LeftHand}   sx={{width:{xs:"10px",md:"50px"},height:{xs:"10px",md:"50px"},border:"2px solid black",bgcolor:"white",borderRadius:"35px",padding:{xs:"6px 6px",md:"10px 10px"}}} />
     </Grid>
 
-<Grid  size={{xs:10}} sx={{width:"80vw",height:{xs:"20vh",md:"35vh"},margin:"0px 10px"}}  >
+<Grid  size={{xs:10}} sx={{width:"80vw",height:{xs:"10vh",md:"35vh"},margin:"0px 10px"}}  >
     
     <img   src={data[storedData]?.image}   alt="not found" style={{width:"100%",height:"100%"}}  />
 </Grid>
@@ -49,7 +49,7 @@ image:"/Assets/WomanBannerImage/BannerImage1.jpeg"
 
 
 <Grid  size={{xs:1}}  sx={{display:"flex",justifyContent:"flex-start",alignItems:"center"}}  >
-<ArrowForwardIosIcon    onClick={RightHand}  sx={{width:{xs:"25px",md:"50px"},height:{xs:"20px",md:"50px"},border:"2px solid black",bgcolor:"white",borderRadius:"35px",padding:"10px 10px"}}  />
+<ArrowForwardIosIcon    onClick={RightHand}  sx={{width:{xs:"10px",md:"50px"},height:{xs:"10px",md:"50px"},border:"2px solid black",bgcolor:"white",borderRadius:"35px",padding:{xs:"6px 6px",md:"10px 10px"}}}  />
     </Grid> 
     </Grid> 
 
