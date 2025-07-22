@@ -35,10 +35,10 @@ const ChangingInputValue=(e)=>{
 }
 
 
-const WomenFinalData= imagesW.filter((item)=>item.title.toLowerCase().toString().includes(searchValue.trim())||item.price.toLowerCase().toString().includes(searchValue.trim()))
-const MenFinalData= imagesM.filter((item)=>item.title.toLowerCase().toString().includes(searchValue.trim())||item.price.toLowerCase().toString().includes(searchValue.trim()))
-const ShoesBags= imagesB.filter((item)=>item.title.toLowerCase().toString().includes(searchValue.trim())||item.price.toLowerCase().toString().includes(searchValue.trim()))
-const BeautyData=imagesP.filter((item)=>item.title.toLowerCase().toString().includes(searchValue.trim())||item.price.toLowerCase().toString().includes(searchValue.trim()))
+const WomenFinalData= imagesW.filter((item)=>item.title.toLowerCase().toString().includes(searchValue.toLowerCase().trim())||item.price.toLowerCase().toString().includes(searchValue.trim()))
+const MenFinalData= imagesM.filter((item)=>item.title.toLowerCase().toString().includes(searchValue.toLowerCase().trim())||item.price.toLowerCase().toString().includes(searchValue.trim()))
+const ShoesBags= imagesB.filter((item)=>item.title.toLowerCase().toString().includes(searchValue.toLowerCase().trim())||item.price.toLowerCase().toString().includes(searchValue.trim()))
+const BeautyData=imagesP.filter((item)=>item.title.toLowerCase().toString().includes(searchValue.toLowerCase().trim())||item.price.toLowerCase().toString().includes(searchValue.trim()))
 
 const TotalFilteredData=[...WomenFinalData,...MenFinalData,...ShoesBags,...BeautyData]
 

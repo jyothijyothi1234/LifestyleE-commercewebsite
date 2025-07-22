@@ -8,7 +8,7 @@ import XIcon from '@mui/icons-material/X';
 function FotterPage(){
 
     return(
-        <Grid   container  columns={{xs:12 }}  sx={{bgcolor:"black",mb:{xs:"850px",md:0}}} >
+        <Grid   container  columns={{xs:12 }}  sx={{bgcolor:"black",bottom:0,}} >
 
 <Grid   size={{xs:12,md:12}}  sx={{display:"flex",pt:3,pb:3,}}>
     <Grid  size={{xs:6,md:6}}   sx={{display:"flex"}}>

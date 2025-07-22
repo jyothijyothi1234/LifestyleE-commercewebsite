@@ -7,8 +7,8 @@ import {  FinalDataContext } from "../../MainComponent/SearchContext"
 
 export function SingleBanner({singleimage}) {
   return (
-    <Grid container  columns={{ xs: 12 }}   >
-      <Grid item size={{xs:12}}  sx={{width: "100vw", height:{xs:"10vh",md:"40vh"} ,margin: "70px 30px"}} >
+    <Grid container  columns={{ xs: 12,md:12 }}   >
+      <Grid item size={{xs:12}}  sx={{width: "100vw", height:{xs:"10vh",md:"40vh"} ,margin:{xs:"10px 30px",md:"50px 30px"} }} >
         <img
           src={singleimage}
           alt="not found"
@@ -64,7 +64,7 @@ function TotalImagesWomen(){
 )          
 : (
   imagesW.map((item, index) => (
-    <Grid  item size={{xs:3,md:2}} key={index} sx={{ height: {xs:"10vh",md:"30vh"},mt:{xs:11,md:15},ml:12,}}>
+    <Grid  item size={{xs:3,md:2}} key={index} sx={{ height: {xs:"10vh",md:"30vh"},mt:{xs:8,md:13},ml:12,}}>
       <img src={item.image} alt="not found" style={{ height: "100%", width: "100%", borderRadius: "15px" }} />
       <Typography sx={{ textAlign: "center", fontSize: {xs:"10px",md:"18px"} }}>{item.title}</Typography>
       <Typography sx={{ textAlign: "center", fontSize: {xs:"10px",md:"18px"} }}>{item.price}</Typography>

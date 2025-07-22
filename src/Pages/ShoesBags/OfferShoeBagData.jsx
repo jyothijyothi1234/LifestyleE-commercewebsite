@@ -48,7 +48,7 @@ function OfferShoeBagData(){
 
     return(
 
-        <Grid   container  columns={{ xs: 12 }}  sx={{mb:4}} >
+        <Grid   container  columns={{ xs: 12 }}  sx={{mb:{xs:1,md:5}}}>
 
 <Grid   size={{xs:12}}  sx={{margin:"8px 0px"}}>
 <Typography   sx={{textAlign:"center",fontSize:{xs:"20px",md:"30px"}}} >

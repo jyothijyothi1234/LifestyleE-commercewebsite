@@ -14,7 +14,7 @@ import Grid from '@mui/material/Grid';
 
     {SingleImage.map((item, index) => (
         
-        <Grid   key={index} size={{xs:12}}  sx={{width: "100vw", height:{xs:"10vh",md:"40vh"},margin: "70px 30px"}} >
+        <Grid   key={index} size={{xs:12}}  sx={{width: "100vw", height:{xs:"10vh",md:"40vh"},margin: {xs:"30px 30px",md:"50px 30px"}}} >
           <img
             src={ item.image}
             alt="not found"

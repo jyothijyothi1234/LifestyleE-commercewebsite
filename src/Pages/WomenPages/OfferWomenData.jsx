@@ -39,7 +39,7 @@ function OfferWomenData(){
 
     return(
 
-        <Grid   container  columns={{xs:12 }}  sx={{marginBottom:"55px"}} >
+        <Grid   container  columns={{xs:12 }} sx={{mb:{xs:1,md:5}}}>
 
 <Grid  item size={{xs:12}}  sx={{margin:"8px 0px"}}>
 <Typography   sx={{textAlign:"center",fontSize:{xs:"20px",md:"30px"},}} >
