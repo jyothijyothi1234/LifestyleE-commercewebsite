@@ -11,6 +11,8 @@ import imagesB from './data/imagesShoe&Bags';
 import imagesP from "./data/imagesBeauty"
 import LandingPageShoeBag  from "./Pages/ShoesBags/TotalShoeBagImages";
 import TotalImagesBeauty from "./Pages/Beauty/TotalImages";
+import Box from '@mui/material/Box';
+
 function App() {
 
   const[searchValue,setSearchValue]=useState("")
@@ -21,8 +23,9 @@ function App() {
 const [click,setClick]=useState(false)
 
   return (
-    <div className="App"   sx={{height:{xs:"scroll",md:0}}}>
-
+    <div className="App"  >
+<Box      sx={{flexDirection: "column",
+    minHeight: "200vh",}}>
       <BrowserRouter>
  <SearchContext.Provider    value={{searchValue,setSearchValue}}>
  <FinalDataContext.Provider   value={{filtersData,setFiltersData,imagesW,setShow,show,cart,setCart,click,setClick,hide,setHide,imagesM,imagesB,imagesP,}} >
@@ -42,7 +45,7 @@ const [click,setClick]=useState(false)
 </SearchContext.Provider> 
 
       </BrowserRouter>
-
+      </Box>
     </div>
   );
 }
