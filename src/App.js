@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Grid } from '@mui/material';
 import NavBar from './Navbar';
 import LandingPage from   "./Pages/LandingPage";
 import TotalImagesWomen from './Pages/WomenPages/TotalImages';
