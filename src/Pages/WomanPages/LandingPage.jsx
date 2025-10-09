@@ -21,9 +21,6 @@ image:"/Assets/WomanBannerImage/BannerImage1.jpeg"
                 
                     }])
 
-
-                    // console.log(data)
-
                     const[storedData,setStoredData]=useState(0)
 
                     const RightHand=()=>{
@@ -33,6 +30,7 @@ image:"/Assets/WomanBannerImage/BannerImage1.jpeg"
                     const LeftHand=()=>{
                         setStoredData(storedData===0?data.length-1:storedData-1)
                     }
+
     return(
 <Grid  container   columns={{xs:12,md:12}}   >
 
