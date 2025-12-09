@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState,memo } from "react"
 import Grid from '@mui/material/Grid';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -79,4 +79,4 @@ image:"/Assets/Shoe&BagBannerImages/BannerImage1.jpeg"
     )
 }
 
-export default LandingPageShoeBag;
+export default memo(LandingPageShoeBag);

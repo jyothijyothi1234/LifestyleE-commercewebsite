@@ -4,7 +4,7 @@ import React from "react";
 export function Pagefound(){
 
 
-
+console.log("hello jyothi")
     return(
 
         <div>

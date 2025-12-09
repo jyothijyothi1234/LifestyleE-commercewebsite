@@ -1,4 +1,4 @@
-import React from "react"
+import React,{memo} from "react"
 
 import Grid from '@mui/material/Grid';
 
@@ -30,4 +30,4 @@ import Grid from '@mui/material/Grid';
     );
   }
 
-  export default TopSingleShoeBag;
+  export default memo(TopSingleShoeBag);

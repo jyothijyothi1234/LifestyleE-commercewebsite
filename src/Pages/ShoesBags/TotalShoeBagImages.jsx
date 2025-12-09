@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,memo } from "react";
 import { Typography, Grid, Button} from "@mui/material";
 import {  FinalDataContext } from "../../MainComponent/SearchContext"
 
@@ -31,7 +31,7 @@ function TotalImagesShoeBag(){
 
      const AddToCart=()=>{
 
-      setCart(cart+1)
+      setCart(prev=>prev+1)
        setClick(true)
        setHide(true)
      }
@@ -94,4 +94,4 @@ function TotalImagesShoeBag(){
 
     );
   }
-export default TotalImagesShoeBag;
+export default memo(TotalImagesShoeBag);

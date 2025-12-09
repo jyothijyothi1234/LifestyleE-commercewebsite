@@ -1,4 +1,4 @@
-import React from "react"
+import React,{memo} from "react"
 
 import Grid from '@mui/material/Grid';
 
@@ -28,4 +28,4 @@ import Grid from '@mui/material/Grid';
     );
   }
 
-  export default TopSingleImageBeauty;
+  export default memo(TopSingleImageBeauty);

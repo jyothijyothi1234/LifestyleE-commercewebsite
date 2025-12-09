@@ -1,9 +1,6 @@
-import React, { useContext } from "react";
+import React, { useContext,memo } from "react";
 import { Typography, Grid, Button } from "@mui/material";
 import {  FinalDataContext } from "../../MainComponent/SearchContext"
-
-
-
 
 export function SingleBanner({singleimage}) {
   return (
@@ -97,7 +94,7 @@ function TotalImagesWomen(){
 
     );
   }
-export default TotalImagesWomen;
+export default memo(TotalImagesWomen);
 
 
 

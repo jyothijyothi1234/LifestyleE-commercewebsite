@@ -1,5 +1,5 @@
 
-import React, { useContext } from "react";
+import React, { useContext,memo } from "react";
 import { Typography, Grid, Button } from "@mui/material";
 import {  FinalDataContext } from "../../MainComponent/SearchContext"
 
@@ -98,4 +98,4 @@ function TotalImagesBeauty(){
 
    );
  }
-export default TotalImagesBeauty;
+export default memo(TotalImagesBeauty);

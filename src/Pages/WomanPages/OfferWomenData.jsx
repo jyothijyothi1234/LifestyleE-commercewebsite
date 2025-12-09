@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState,memo } from "react"
 import { Typography } from "@mui/material";
 import Grid from '@mui/material/Grid';
 
@@ -75,4 +75,4 @@ Brand Offer
 
 
 
-export default OfferWomanData;
+export default memo(OfferWomanData);
