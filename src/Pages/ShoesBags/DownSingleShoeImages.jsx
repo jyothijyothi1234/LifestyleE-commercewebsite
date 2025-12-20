@@ -1,6 +1,6 @@
 import React,{memo} from "react"
 
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/GridLegacy';
 
 
   function DownSingleShoeImages() {
@@ -12,10 +12,10 @@ import Grid from '@mui/material/Grid';
 
   ]
     return (
-      <Grid container  columns={{ xs: 12 }} >
+      <Grid container  spacing={2}  >
     {SingleImage.map((item, index) => (
         
-        <Grid   key={index} size={{xs:12}}  sx={{width: "100vw", height:{xs:"10vh",md:"40vh"},margin: "30px 30px"}} >
+        <Grid   key={index}   item  xs={12}   sx={{width: "100vw", height:{xs:"10vh",md:"40vh"},margin: "30px 30px"}} >
           <img
             src={ item.image}
             alt="not found"

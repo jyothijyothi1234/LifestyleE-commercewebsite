@@ -7,7 +7,9 @@ import { SearchContext, FinalDataContext }  from "./MainComponent/SearchContext"
 import  imagesW  from './data/imagesW';
 import imagesM from "./data/imagesM";
 import imagesB from './data/imagesShoe&Bags';
-import imagesP from "./data/imagesBeauty"
+import imagesP from "./data/imagesBeauty";
+import Box from '@mui/material/Box';
+
 const LandingPage=lazy(()=> import("./Pages/LandingPage") )
 const TotalImagesWomen=lazy(()=> import('./Pages/WomenPages/TotalImages') )
 const TotalImagesWoman=lazy(()=> import('./Pages/WomanPages/TotalImagesWomen') )
@@ -51,6 +53,8 @@ const [click,setClick]=useState(false)
 
   return (
     <div className="App"  >
+
+
       <BrowserRouter>
  <SearchContext.Provider    value={{searchValue,setSearchValue}}>
  <FinalDataContext.Provider   value={{filtersData,setFiltersData,imagesW,setShow,show,cart,setCart,click,setClick,hide,setHide,imagesM,imagesB,imagesP,}} >
@@ -130,6 +134,8 @@ const [click,setClick]=useState(false)
 </FinalDataContext.Provider>
 </SearchContext.Provider> 
       </BrowserRouter>
+
+
     </div>
   );
 }

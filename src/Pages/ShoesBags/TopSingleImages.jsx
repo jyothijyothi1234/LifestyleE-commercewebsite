@@ -1,33 +1,34 @@
-import React,{memo} from "react"
+import React, { memo } from "react";
 
-import Grid from '@mui/material/Grid';
+import Grid from "@mui/material/GridLegacy";
 
-
-  function TopSingleShoeBag() {
-
-    
-    const SingleImage=[
-      {image:"/Assets/Shoe&BagBannerImages/Banner1.jpeg"},
-      { image:"/Assets/Shoe&BagBannerImages/Banner2.jpeg"}
-
-  ]
-    return (
-      <Grid container  columns={{ xs: 12 }} >
-
-    {SingleImage.map((item, index) => (
-        
-        <Grid  key={index} size={{xs:12}}  sx={{width: "100vw", height:{xs:"10vh",md:"40vh"},margin: {xs:"30px 30px",md:"50px 30px"}}} >
+function TopSingleShoeBag() {
+  const SingleImage = [
+    { image: "/Assets/Shoe&BagBannerImages/Banner1.jpeg" },
+    { image: "/Assets/Shoe&BagBannerImages/Banner2.jpeg" },
+  ];
+  return (
+    <Grid container spacing={2}>
+      {SingleImage.map((item, index) => (
+        <Grid
+          key={index}
+          item
+          xs={12}
+          sx={{
+            width: "50vw",
+            height: { xs: "10vh", md: "40vh" },
+            margin: { xs: "30px 30px", md: "50px 30px" },
+          }}
+        >
           <img
-            src={ item.image}
+            src={item.image}
             alt="not found"
             style={{ width: "100%", height: "100%", borderRadius: "10px" }}
           />
         </Grid>
-    )
-  )
+      ))}
+    </Grid>
+  );
 }
-      </Grid>
-    );
-  }
 
-  export default memo(TopSingleShoeBag);
+export default memo(TopSingleShoeBag);
